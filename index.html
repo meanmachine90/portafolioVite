@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio AJ</title>
+    <link rel="stylesheet" href="less/main.less" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".menu-toggle")
+          .addEventListener("click", function () {
+            document.querySelector(".menu").classList.toggle("show");
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="#">AJ's Desing </a></div>
+        <ul class="links">
+          <li><a href="http://">home</a></li>
+          <li><a href="http://">About</a></li>
+          <li><a href="http://">portafolio</a></li>
+          <li><a href="http://">Contacto</a></li>
+        </ul>
+        <a href="" class="action_btn">comienza aqui</a>
+        <div class="toggle_btn">
+          &#9776;
+        </div>
+      </nav>
+    </header>
+    <script>
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
