@@ -16,6 +16,7 @@ const obtenerEntradas = ()=>{
                         './node_modules/**'
                     ]
                 }
+                
             ).map(
                 fileData => [
                     fileData.slice(0, fileData.length - path.extname(fileData).length),
